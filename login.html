@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/libs.css">
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div class="header header--empty">
+    
+    <div class="header-sidebar">
+      <div class="sidebar-content">
+        <button class="toggle-menu" type="button"></button>
+        <img class="logo" src="img/logo.svg" alt="">
+      </div>
+    </div>
+    <div class="header-content">
+      <div class="wrapper">
+        <div class="container-fluid">
+          
+          <a href="#" class="logout hidden-xs">
+            <svg class="logout__icon"><use xlink:href="/img/sprite.svg#icon-login"></use></svg><span class="logout__text">Вход</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="page-container clearfix">
+    <div class="sidebar">
+      <div class="sidebar-content">
+        <div class="sidebar-header visible-xs-block">
+          <div class="current-user"><!-- current-user -->
+            <div class="current-user__icon-box">
+              <svg class="current-user__icon"><use xlink:href="/img/sprite.svg#icon-user"></use></svg>
+            </div>
+            <div class="current-user__meta">
+              <div class="current-user__name">Смирнов Алексей Петрович</div>
+              <div class="current-user__info">Студент 4 курса, название факультета</div>
+            </div>
+          </div><!-- .current-user -->
+          <a href="#" class="logout">
+            <svg class="logout__icon"><use xlink:href="/img/sprite.svg#icon-logout"></use></svg><span class="logout__text">Выход</span>
+          </a>
+        </div>
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--user"><use xlink:href="/img/sprite.svg#icon-user"></use></svg>
+              <span class="main-menu__item-name">Портфолио</span>
+            </a>
+          </li>
+          <li class="main-menu__item main-menu__item--active">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--document"><use xlink:href="/img/sprite.svg#icon-document"></use></svg>
+              <span class="main-menu__item-name">Документы</span>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--questionnaire"><use xlink:href="/img/sprite.svg#icon-questionnaire"></use></svg>
+              <span class="main-menu__item-name">Анкетирование</span>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--calendar"><use xlink:href="/img/sprite.svg#icon-calendar"></use></svg>
+              <span class="main-menu__item-name">Расписание</span>
+            </a>
+          </li>
+          <li class="main-menu__item main-menu__item--has-dropdown">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--list"><use xlink:href="/img/sprite.svg#icon-list"></use></svg>
+              <span class="main-menu__item-name">Успеваемость</span>
+            </a>
+            <ul class="main-menu-dropdown">
+              <li class="main-menu-dropdown__item"><a class="main-menu-dropdown__link" href="#">Издательство "Лань"</a></li>
+              <li class="main-menu-dropdown__item"><a class="main-menu-dropdown__link" href="#">Scopus - база данных рефератов и цитирования</a></li>
+              <li class="main-menu-dropdown__item"><a class="main-menu-dropdown__link" href="#">База данных CASC – Коллекция компьютерных и прикладных наук компании EBSCO Publishing</a></li>
+            </ul>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--notebook"><use xlink:href="/img/sprite.svg#icon-notebook"></use></svg>
+              <span class="main-menu__item-name">Ученбный план</span>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--email"><use xlink:href="/img/sprite.svg#icon-email"></use></svg>
+              <span class="main-menu__item-name">Сообщения</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="main">
+        <div class="wrapper">
+          <div class="container-fluid">
+<form action="/" class="login-form">
+  <div class="form-title">Вход</div>
+  <div class="fl-row">
+    <label>Логин</label>
+    <input type="text" name="" id="">
+  </div>
+  <div class="fl-row">
+    <label>Пароль</label>
+    <input type="password" name="" id="">
+  </div>
+  <div class="row">
+    <div class="col-xs-7">
+      <div class="custom-check">
+        <input type="checkbox" name="check" id="check1">
+        <label for="check1">Запомнить меня</label>
+      </div>
+    </div>
+    <div class="col-xs-5 right-text">
+      <a href="#">Забыли пароль?</a>
+    </div>
+  </div>
+  <br>
+  <div class="fl-row">
+    <label>Вход через:</label>
+     <div class="social-login">
+        <a href="#"><svg class="icon-yandex-social"><use xlink:href="/img/sprite.svg#icon-yandex-social"></use></svg></a>
+        <a href="#"><svg class="icon-mailru-social"><use xlink:href="/img/sprite.svg#icon-mailru-social"></use></svg></a>
+        <a href="#"><svg class="icon-vk-social"><use xlink:href="/img/sprite.svg#icon-vk-social"></use></svg></a>
+        <a href="#"><svg class="icon-ok-social"><use xlink:href="/img/sprite.svg#icon-ok-social"></use></svg></a>
+        <a href="#"><svg class="icon-twitter-social"><use xlink:href="/img/sprite.svg#icon-twitter-social"></use></svg></a>
+        <a href="#"><svg class="icon-facebook-social"><use xlink:href="/img/sprite.svg#icon-facebook-social"></use></svg></a>
+        <a href="#"><svg class="icon-google-plus-social"><use xlink:href="/img/sprite.svg#icon-google-plus-social"></use></svg></a>
+     </div>
+  </div>
+  <br>
+  <div class="form-sumb">
+    <input type="submit" class="styled-button styled-button--red styled-button--solid styled-button--w100" value="Войти">
+    <a href="#">Регистрация</a>
+  </div>
+</form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="wrapper">© УИТ <a href="#">СамГТУ</a> 2013-2018</div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden">
+    <form action="/" id="new_ticket_create" class="login-form">
+      <div class="form__title">Новое сообщение</div>
+      <div class="fl-row">
+        <label>Тема</label>
+        <input type="text" name="" id="">
+      </div>
+      <div class="fl-row">
+        <label for="">Сообщение</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="fl-row">
+        <input type="file" name="" id="">
+        <div class="file-fl-note">Поддерживаются файлы формата jpg,png,gif,pdf,rtf,doc,docx,txt размером не более 5 мб.</div>
+      </div>
+      <div class="form-sumb">
+        <input type="submit" class="styled-button styled-button--red styled-button--solid styled-button--center" value="Отправить">
+      </div>
+    </form>
+  </div>
+	<script type="text/javascript" src="/js/libs.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>

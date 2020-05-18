@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/libs.css">
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div class="header">
+    
+    <div class="header-sidebar">
+      <div class="sidebar-content">
+        <button class="toggle-menu" type="button"></button>
+        <img class="logo" src="img/logo.svg" alt="">
+      </div>
+    </div>
+    <div class="header-content">
+      <div class="wrapper">
+        <div class="container-fluid">
+          
+          <div class="current-user hidden-xs"><!-- current-user -->
+            <div class="current-user__icon-box">
+              <svg class="current-user__icon"><use xlink:href="/img/sprite.svg#icon-user"></use></svg>
+            </div>
+            <div class="current-user__meta">
+              <div class="current-user__name">Смирнов Алексей Петрович</div>
+              <div class="current-user__info">Студент 4 курса, название факультета</div>
+            </div>
+          </div><!-- .current-user -->
+
+          <a href="#" class="logout hidden-xs">
+            <svg class="logout__icon"><use xlink:href="/img/sprite.svg#icon-logout"></use></svg><span class="logout__text">Выход</span>
+          </a>
+
+          <div class="header-links">
+            <div class="header-link__item hidden-xs">
+              <a href="#" class="header-link">
+                <svg class="header-link__icon header-link__icon--email"><use xlink:href="/img/sprite.svg#icon-email"></use></svg>
+              </a>
+            </div>
+            <div class="header-link__item">
+              <div class="header-link has-popup">
+                <svg class="header-link__icon header-link__icon--notification"><use xlink:href="/img/sprite.svg#icon-notification"></use></svg>
+                <span class="header-link__label-count">6</span>
+              </div>
+              <div class="popup-dropdown">
+                <div class="popup-dropdown__header">Уведомления</div>
+                <div class="popup-dropdown__content">
+                  <div class="notification">
+                    <div class="notification__avatar">
+                      <img src="content/ava2.png" alt="">
+                    </div>
+                    <div class="notification__content">
+                      <a href="#">
+                        <b>Памяти Честера Беннингтона Linkin Park Самара</b>
+                      </a> опубликовало новую запись
+                      <a href="#">Статья о благотворительной работе Честера и...</a>
+                      <div class="notification__date">23 мая 17:45</div>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification__avatar">
+                      <div class="default-photo">
+                        <svg class="icon icon-user">
+                          <use xlink:href="/img/sprite.svg#icon-user"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="notification__content">
+                      <a href="#">
+                        <b>Наталья Лукашина</b>
+                      </a> впервые за долгое время опубликовало новую запись
+                      <div class="notification__date">22 мая 18:24</div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="popup-dropdown__footer">Показать все</a>
+              </div>
+            </div>
+            <div class="header-link__item">
+              <a href="#" class="header-link">
+                <svg class="header-link__icon header-link__icon--config"><use xlink:href="/img/sprite.svg#icon-config"></use></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="page-container clearfix">
+    <div class="sidebar">
+      <div class="sidebar-content">
+        <div class="sidebar-header visible-xs-block">
+          <div class="current-user"><!-- current-user -->
+            <div class="current-user__icon-box">
+              <svg class="current-user__icon"><use xlink:href="/img/sprite.svg#icon-user"></use></svg>
+            </div>
+            <div class="current-user__meta">
+              <div class="current-user__name">Смирнов Алексей Петрович</div>
+              <div class="current-user__info">Студент 4 курса, название факультета</div>
+            </div>
+          </div><!-- .current-user -->
+          <a href="#" class="logout">
+            <svg class="logout__icon"><use xlink:href="/img/sprite.svg#icon-logout"></use></svg><span class="logout__text">Выход</span>
+          </a>
+        </div>
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--user"><use xlink:href="/img/sprite.svg#icon-user"></use></svg>
+              <span class="main-menu__item-name">Портфолио</span>
+            </a>
+          </li>
+          <li class="main-menu__item main-menu__item--active">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--document"><use xlink:href="/img/sprite.svg#icon-document"></use></svg>
+              <span class="main-menu__item-name">Документы</span>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--questionnaire"><use xlink:href="/img/sprite.svg#icon-questionnaire"></use></svg>
+              <span class="main-menu__item-name">Анкетирование</span>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--calendar"><use xlink:href="/img/sprite.svg#icon-calendar"></use></svg>
+              <span class="main-menu__item-name">Расписание</span>
+            </a>
+          </li>
+          <li class="main-menu__item main-menu__item--has-dropdown">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--list"><use xlink:href="/img/sprite.svg#icon-list"></use></svg>
+              <span class="main-menu__item-name">Успеваемость</span>
+            </a>
+            <ul class="main-menu-dropdown">
+              <li class="main-menu-dropdown__item"><a class="main-menu-dropdown__link" href="#">Издательство "Лань"</a></li>
+              <li class="main-menu-dropdown__item"><a class="main-menu-dropdown__link" href="#">Scopus - база данных рефератов и цитирования</a></li>
+              <li class="main-menu-dropdown__item"><a class="main-menu-dropdown__link" href="#">База данных CASC – Коллекция компьютерных и прикладных наук компании EBSCO Publishing</a></li>
+            </ul>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--notebook"><use xlink:href="/img/sprite.svg#icon-notebook"></use></svg>
+              <span class="main-menu__item-name">Ученбный план</span>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <svg class="main-menu__icon main-menu__icon--email"><use xlink:href="/img/sprite.svg#icon-email"></use></svg>
+              <span class="main-menu__item-name">Сообщения</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="main">
+        <div class="wrapper">
+          <div class="container-fluid">
+<h1>Личный кабинет</h1>
+<div class="row">
+  <div class="col-md-8">
+    <br>
+    <div class="tile-categories__item">
+      <div class="tile-categories__item-name">
+        <span>Задолженность попредметам</span>
+      </div>
+      <div class="tile-categories__item-container">
+        <div class="tile-categories__item-content">
+          <div class="text-block">
+            <table class="responcive-tbl">
+              <thead>
+                <tr>
+                  <th>№ семестра</th>
+                  <th>Дисциплина, тип контроля</th>
+                  <th>Преподаватель</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Математика (зачет)</td>
+                  <td>Иванов</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Физика (Экзамен)</td>
+                  <td>Петров</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Математика (зачет)</td>
+                  <td>Иванов</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <a href="#" class="tile-categories__item-readmore">Подробнее</a>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="tile-categories row">
+      <div class="col-sm-6">
+        <div class="tile-categories__item">
+          <div class="tile-categories__item-name"><span>Расписание занятий на сегодня</span></div>
+          <div class="tile-categories__item-container">
+            <div class="tile-categories__item-content">
+              <div class="shcedule-preview">
+                <p><b>Предмет:</b> Физика</p>
+                <p><b>Время:</b> 09:00</p>
+                <p><b>Аудитория:</b> 7 корп. 217 ауд.</p>
+              </div>
+            </div>
+            <a href="#" class="tile-categories__item-readmore">Подробнее</a>
+            <svg class="tile-categories__icon tile-categories__icon--calendar"><use xlink:href="/img/sprite.svg#icon-calendar"></use></svg>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="tile-categories__item">
+          <div class="tile-categories__item-name"><span>Успеваемость</span></div>
+          <div class="tile-categories__item-container">
+            <div class="tile-categories__item-content">
+              Краткое содердание конетнта личного кабинета несколько строк с пояснением данного блока
+            </div>
+            <a href="#" class="tile-categories__item-readmore">Подробнее</a>
+            <svg class="tile-categories__icon tile-categories__icon--list"><use xlink:href="/img/sprite.svg#icon-list"></use></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tile-categories row">
+      <div class="col-sm-6">
+        <div class="tile-categories__item">
+          <div class="tile-categories__item-name"><span>Учебный план</span></div>
+          <div class="tile-categories__item-container">
+            <div class="tile-categories__item-content">
+              Краткое содердание конетнта личного кабинета несколько строк с пояснением данного блока
+            </div>
+            <a href="#" class="tile-categories__item-readmore">Подробнее</a>
+            <svg class="tile-categories__icon tile-categories__icon--notebook"><use xlink:href="/img/sprite.svg#icon-notebook"></use></svg>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="tile-categories__item">
+          <div class="tile-categories__item-name"><span>Индивидуальный учебный план</span></div>
+          <div class="tile-categories__item-container">
+            <div class="tile-categories__item-content">
+              Краткое содердание конетнта личного кабинета несколько строк с пояснением данного блока
+            </div>
+            <a href="#" class="tile-categories__item-readmore">Подробнее</a>
+            <svg class="tile-categories__icon tile-categories__icon--airplane"><use xlink:href="/img/sprite.svg#icon-airplane"></use></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Последние собщения</h2>
+    <div class="latest-messages"><!-- latest-messages -->
+      <div class="message-list"><!-- message-list -->
+        <div class="message"><!-- message -->
+          <div class="message__user">
+            <div class="message__user-avatar"><img src="content/ava2.png" alt=""></div>
+            <div class="message__autor">07 Марта 2018,<br> Михаил Смирнов</div>
+            <div class="message__online-status">Офлайн</div>
+          </div>
+          <div class="message__meta">
+            <div class="message__autor">07 Марта 2018, Михаил Смирнов</div>
+            <div class="message__text">
+              С 12 по 23 марта, по будням с 9 до 15 часов
+            </div>
+          </div>
+        </div><!-- .message -->
+        <div class="message"><!-- message -->
+          <div class="message__user">
+            <div class="message__user-avatar"><img src="content/ava3.png" alt=""></div>
+            <div class="message__autor">07 Марта 2018,<br> Михаил Смирнов</div>
+            <div class="message__online-status message__online-status--online">Онлайн</div>
+          </div>
+          <div class="message__meta">
+            <div class="message__autor">07 Марта 2018, Михаил Смирнов</div>
+            <div class="message__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque saepe et atque deserunt voluptatibus sunt iste quae natus aut accusantium consequatur quas tempore esse beatae, delectus totam voluptates sit eaque!
+              Quod, a voluptatibus ex esse dicta velit fugiat, nihil animi quia quae corporis sapiente veniam repellat in dignissimos. Vero nemo libero facere in fugit ullam asperiores similique animi laudantium corrupti.
+              Mollitia inventore maxime vitae. Placeat a veniam optio saepe quo. Iusto laboriosam magni tenetur, est explicabo sunt minus, ut voluptate molestiae nobis, animi tempora praesentium cumque quo quibusdam hic odit.
+            </div>
+          </div>
+        </div><!-- .message -->
+        <div class="message"><!-- message -->
+          <div class="message__user">
+            <div class="message__user-avatar"><img src="content/ava2.png" alt=""></div>
+            <div class="message__autor">07 Марта 2018,<br> Султыгов Абдул-Хаким</div>
+            <div class="message__online-status">Офлайн</div>
+          </div>
+          <div class="message__meta">
+            <div class="message__autor">07 Марта 2018, Султыгов Абдул-Хаким </div>
+            <div class="message__text">
+              С 12 по 23 марта, по будням с 9 до 15 часов, фойе главног корпуса Политеха работает мобильнй пункт оформления
+            </div>
+          </div>
+        </div><!-- .message -->
+        <div class="message"><!-- message -->
+          <div class="message__user">
+            <div class="message__user-avatar"><img src="content/ava3.png" alt=""></div>
+            <div class="message__autor">07 Марта 2018,<br> Михаил Смирнов</div>
+            <div class="message__online-status message__online-status--online">Онлайн</div>
+          </div>
+          <div class="message__meta">
+            <div class="message__autor">07 Марта 2018, Михаил Смирнов</div>
+            <div class="message__text">
+              С 12 по 23 марта, по будням с 9 до 15 часов, фойе главног корпуса Политеха работает мобильнй пункт оформления
+            </div>
+          </div>
+        </div><!-- .message -->
+      </div><!-- .message-list -->
+      <center><a href="#" class="read-more">Показать все</a></center>
+    </div><!-- .latest-messages -->
+
+  </div>
+  <div class="col-md-4">
+    <!-- side-block -->
+    <div class="side-block side-block--bg--magnolia">
+      <h2 class="side-block__title">Рейтинг</h2>
+      <div class="ratings-list"><!-- ratings-list -->
+        <div class="rating-item"><!-- rating-item -->
+          <div class="rating-item__name">Название строчки</div>
+          <div class="rating-item__num">
+            <svg class="rating-item__icon"><use xlink:href="/img/sprite.svg#icon-star"></use></svg>155
+          </div>
+        </div><!-- .rating-item -->
+        <div class="rating-item"><!-- rating-item -->
+          <div class="rating-item__name">Другое название</div>
+          <div class="rating-item__num">
+            <svg class="rating-item__icon"><use xlink:href="/img/sprite.svg#icon-star"></use></svg>55
+          </div>
+        </div><!-- .rating-item -->
+        <div class="rating-item"><!-- rating-item -->
+          <div class="rating-item__name">Еще одно название в две строки</div>
+          <div class="rating-item__num">
+            <svg class="rating-item__icon"><use xlink:href="/img/sprite.svg#icon-star"></use></svg>5
+          </div>
+        </div><!-- .rating-item -->
+      </div><!-- .ratings-list -->
+    </div>
+    <!-- .side-block -->
+      
+    <!-- side-block -->
+    <div class="side-block side-block--bg--magnolia">
+      <h2 class="side-block__title">Объявления</h2>
+      <div class="announcing"><!-- announcing -->
+        <div class="announcing-item"><!-- announcing-item -->
+          <div class="announcing-item__date">07 Марта 2018</div>
+          <div class="announcing-item__text">
+            С 12 по 23 марта, по будням с 9 до 15 часов, фойе главного корпуса Политеха работает мобильнй пункт оформления электронных полисов ОМС в виде пластиковых карт. Наши представители готовят документы в течение нескольких минут.
+          </div>
+        </div><!-- .announcing-item -->
+        <div class="announcing-item"><!-- announcing-item -->
+          <div class="announcing-item__date">08 Марта 2018</div>
+          <div class="announcing-item__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus similique quaerat delectus! Inventore, quaerat ut nihil velit corporis labore aliquam explicabo dicta error unde, consequuntur animi, esse itaque veritatis.
+          </div>
+        </div><!-- .announcing-item -->
+        <div class="announcing-item"><!-- announcing-item -->
+          <div class="announcing-item__date">09 Марта 2018</div>
+          <div class="announcing-item__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque soluta iusto minima autem reiciendis eius sunt voluptatem, beatae possimus exercitationem officia magnam rerum modi ex maxime ea corrupti numquam dicta.
+            Minima voluptatum placeat vel aspernatur fuga autem, reprehenderit magni ut soluta incidunt, magnam fugiat quam! Fugit quasi enim harum neque exercitationem rerum, nemo necessitatibus incidunt temporibus est ratione, nostrum dolores!
+            Iure quia explicabo alias accusamus adipisci. Consectetur, culpa nulla. Non ipsam culpa aperiam odit voluptas dolore corrupti voluptate quae iusto, nemo tempore, ipsa modi ut alias vitae rem exercitationem expedita!
+          </div>
+        </div><!-- .announcing-item -->
+      </div><!-- .announcing -->
+      <a href="#" class="read-more">Показать все</a>
+    </div>
+    <!-- .side-block -->
+
+    <!-- side-block -->
+    <div class="side-block">
+      <h2 class="side-block__title">Друзья онлайн</h2>
+      <div class="friend-list">
+        <div class="friend">
+          <div class="friend__avatar"><a href="#"><img src="content/ava1.png" alt=""></a></div>
+          <div class="friend__meta">
+            <div class="friend__name"><a href="#">Михаил Смирнов</a></div>
+            <a href="#" class="friend__to-text">Написать сообщение</a>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar"><a href="#"><img src="content/ava1.png" alt=""></a></div>
+          <div class="friend__meta">
+            <div class="friend__name"><a href="#">Михаил Смирнов</a></div>
+            <a href="#" class="friend__to-text">Написать сообщение</a>
+          </div>
+        </div>
+        <div class="friend">
+          <div class="friend__avatar"><a href="#"><img src="content/ava1.png" alt=""></a></div>
+          <div class="friend__meta">
+            <div class="friend__name"><a href="#">Михаил Смирнов</a></div>
+            <a href="#" class="friend__to-text">Написать сообщение</a>
+          </div>
+        </div>
+      </div>
+      <center><a href="#" class="read-more">Показать всех</a></center>
+    </div>
+    <!-- .side-block -->
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="wrapper">© УИТ <a href="#">СамГТУ</a> 2013-2018</div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden">
+    <form action="/" id="new_ticket_create" class="login-form">
+      <div class="form__title">Новое сообщение</div>
+      <div class="fl-row">
+        <label>Тема</label>
+        <input type="text" name="" id="">
+      </div>
+      <div class="fl-row">
+        <label for="">Сообщение</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="fl-row">
+        <input type="file" name="" id="">
+        <div class="file-fl-note">Поддерживаются файлы формата jpg,png,gif,pdf,rtf,doc,docx,txt размером не более 5 мб.</div>
+      </div>
+      <div class="form-sumb">
+        <input type="submit" class="styled-button styled-button--red styled-button--solid styled-button--center" value="Отправить">
+      </div>
+    </form>
+  </div>
+	<script type="text/javascript" src="/js/libs.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
